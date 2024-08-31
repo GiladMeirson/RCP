@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Simulation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Rock Paper Scissors Simulation</h1>
+        <div class="controls">
+            <div class="input-group">
+                <label for="rockCount">Rocks:</label>
+                <input type="number" id="rockCount" min="1" value="5">
+            </div>
+            <div class="input-group">
+                <label for="paperCount">Papers:</label>
+                <input type="number" id="paperCount" min="1" value="5">
+            </div>
+            <div class="input-group">
+                <label for="scissorsCount">Scissors:</label>
+                <input type="number" id="scissorsCount" min="1" value="5">
+            </div>
+            <div class="input-group">
+                <label for="speed">Speed:</label>
+                <input type="range" id="speed" min="1" max="10" value="5">
+            </div>
+            <button id="startBtn">Start Simulation</button>
+            <button id="resetBtn">Reset</button>
+        </div>
+        <div class="statistics">
+            <p>Rocks: <span id="rockStat">0</span></p>
+            <p>Papers: <span id="paperStat">0</span></p>
+            <p>Scissors: <span id="scissorsStat">0</span></p>
+        </div>
+        <canvas id="simulationCanvas"></canvas>
+        <div id="result" class="result"></div>
+    </div>
+    <audio id="eatSound" src="./bite.mp3" preload="auto"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
